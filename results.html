@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Results 💖 | Abi's BuzzBall Fun Night</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="topbar">
+      <a href="index.html" class="logo">🍸 Abi's BuzzBall Night</a>
+      <a href="vote.html" class="mini-link">Vote 💕</a>
+    </header>
+
+    <section class="results-head">
+      <p class="eyebrow">✨ THE GIRLS HAVE SPOKEN ✨</p>
+      <h1>BuzzBall Results</h1>
+      <p id="voteCount">Loading the girls' votes...</p>
+    </section>
+
+    <section id="resultsList" class="results-list"></section>
+
+    <section class="card voters-card">
+      <h2>💋 Who's voted?</h2>
+      <div id="voters"></div>
+    </section>
+
+    <section class="card details-card">
+      <button id="toggleDetails" class="button secondary" type="button">Show individual votes</button>
+      <div id="details" class="hidden"></div>
+    </section>
+  </main>
+  <div id="resultsToast" class="toast"></div>
+  <script type="module" src="results.js"></script>
+</body>
+</html>

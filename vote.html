@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vote 💕 | Abi's BuzzBall Fun Night</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="topbar">
+      <a href="index.html" class="logo">🍸 Abi's BuzzBall Night</a>
+      <a href="results.html" class="mini-link">Results ✨</a>
+    </header>
+
+    <section id="nameScreen" class="card name-card">
+      <p class="eyebrow">💅 FIRST THINGS FIRST</p>
+      <h1>Who's voting?</h1>
+      <p>Pop your name in so we know whose ratings are whose.</p>
+      <form id="nameForm">
+        <input id="nameInput" maxlength="30" autocomplete="name" placeholder="Your name..." required>
+        <button class="button primary" type="submit">Let's Rate! 💖</button>
+      </form>
+    </section>
+
+    <section id="voteScreen" class="hidden">
+      <div class="heading-row">
+        <div>
+          <p class="eyebrow">🍸 YOUR TURN, <span id="voterName"></span></p>
+          <h1>Rate the BuzzBalls</h1>
+          <p>Give each flavour a score from <strong>1 (no thanks!)</strong> to <strong>10 (OBSESSED!)</strong>.</p>
+        </div>
+        <div class="progress-box"><span id="progress">0</span>/9 rated</div>
+      </div>
+      <form id="voteForm">
+        <div id="flavours" class="flavour-grid"></div>
+        <button id="submitButton" class="button primary big-submit" type="submit">Submit My Votes 💋</button>
+      </form>
+    </section>
+
+    <section id="doneScreen" class="card hidden success-card">
+      <div class="success-icon">🥂</div>
+      <p class="eyebrow">VOTES LOCKED IN!</p>
+      <h1>Cheers, <span id="doneName"></span>! 💕</h1>
+      <p>Your BuzzBall ratings have been saved. Time to see what the girls think...</p>
+      <a class="button primary" href="results.html">See Results ✨</a>
+      <button id="voteAgain" class="button secondary" type="button">Vote again with another name</button>
+    </section>
+  </main>
+  <div id="toast" class="toast"></div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
