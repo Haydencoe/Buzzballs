@@ -1,10 +1,12 @@
 // Replace the values below with your Firebase Web App configuration.
 // Firebase Console -> Project settings -> Your apps -> Web app -> Config
 export const firebaseConfig = {
-  apiKey: "PASTE_YOUR_API_KEY",
-  authDomain: "PASTE_YOUR_PROJECT.firebaseapp.com",
-  projectId: "PASTE_YOUR_PROJECT_ID",
-  storageBucket: "PASTE_YOUR_PROJECT.firebasestorage.app",
-  messagingSenderId: "PASTE_YOUR_SENDER_ID",
-  appId: "PASTE_YOUR_APP_ID"
+  apiKey: "AIzaSyBIRlbR-132xHEO8IdeT23iN-_fWZZran8",
+  authDomain: "buzzball-8fbe5.firebaseapp.com",
+  databaseURL: "https://buzzball-8fbe5-default-rtdb.firebaseio.com",
+  projectId: "buzzball-8fbe5",
+  storageBucket: "buzzball-8fbe5.firebasestorage.app",
+  messagingSenderId: "390040409602",
+  appId: "1:390040409602:web:92ba9b8b1ea1b88b67b91b",
+  measurementId: "G-4ETRZTKE3W"
 };
